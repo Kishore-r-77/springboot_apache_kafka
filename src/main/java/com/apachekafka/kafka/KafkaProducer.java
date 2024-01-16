@@ -16,7 +16,7 @@ public class KafkaProducer {
 	
 	@Value("${spring.kafka.topic.name}")
 	private String topicName;
-
+	
 	private KafkaTemplate<String, String> kafkaTemplate;
 
 	public void sendMessage(String message) {
